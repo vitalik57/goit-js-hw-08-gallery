@@ -102,7 +102,7 @@ function galleryPages(pages) {
 
 function onGalleryClick(evt){
   evt.preventDefault();
-  if (e.target.nodeName !== "IMG") {
+  if (evt.target.nodeName !== "IMG") {
     return
   }
   bigPage.src = evt.target.dataset.source;
